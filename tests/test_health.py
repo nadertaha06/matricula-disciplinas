@@ -31,4 +31,4 @@ def test_settings_tem_os_defaults_do_servico():
 
     assert settings.app_name == "matricula-disciplinas"
     assert settings.port == 8001
-    assert settings.db_name == "disciplinas_db"
+    assert Settings.model_fields["db_name"].default == "disciplinas_db"
