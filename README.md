@@ -112,6 +112,6 @@ Prometheus/Grafana, gateway e testes de carga pertencem a etapa 4. Os relatorios
 
 ## Acesso publico pela porta 8080
 
-Swagger: http://13.220.42.157:8080/disciplinas/docs
+Swagger: http://13.220.42.157:8080/api/disciplinas/docs
 
-O proxy do repositorio de infraestrutura encaminha `/disciplinas/` para este servico. Na EC2, `ROOT_PATH=/disciplinas` mantem o OpenAPI e o Swagger usando o endereco publico correto. A porta interna 8001 continua sendo usada para comunicacao entre servicos.
+O proxy do repositorio de infraestrutura encaminha `/api/disciplinas/` para este servico. Na EC2, `ROOT_PATH=/api/disciplinas` mantem o OpenAPI e o Swagger usando o endereco publico correto. A porta interna 8001 continua sendo usada para comunicacao entre servicos.
